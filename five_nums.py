@@ -19,6 +19,7 @@ if __name__ == "__main__":
     for n in nums[:-1]:
         print(n,end=",")
     print(nums[-1])
-    
+
     print("The average of your numbers is:",average(nums))
+    print("The rounded average is: ",round(average(nums)))
     
