@@ -22,4 +22,3 @@ if __name__ == "__main__":
 
     print("The average of your numbers is:",average(nums))
     print("The rounded average is: ",round(average(nums)))
-    
