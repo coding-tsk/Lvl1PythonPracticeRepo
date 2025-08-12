@@ -41,5 +41,5 @@ q_type = [force_int,force_str,force_str,force_str,force_str]
 
 for q in range(5):
     ans = q_type[q](questions[q])
-    if ans = answers[q]:
+    if ans == answers[q]:
         print("The answer is correct.")
