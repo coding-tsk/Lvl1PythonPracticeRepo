@@ -5,7 +5,7 @@
     description: Python script to go on an adventure :)
 '''
 #---------------------libraries---------------------------
-import random
+import random #lib for random numbers
 #---------------------functions---------------------------
 
 #---------------------main routine------------------------
@@ -15,14 +15,13 @@ if __name__ == "__main__":
     en_hp = 100 #enemy hitpoints
     en_dff = 15 #enemy defence
 
-    #game loop
+    #battle loop
     while(hp > 0 and en_hp > 0): #while both player and enemy are alive
         attack = input('''
-                    Enter your attack:
-                    [s]word
-                    [a]xe
-                    [h]eal   
-                       ''')
+    Enter your move:
+        [s]word
+        [a]xe
+        [h]eal''')[0].lower() #first letter of lowercase input
         
         #Checking what user entered
         if(attack == 's'): #sword attack
@@ -31,3 +30,6 @@ if __name__ == "__main__":
             pass
         if(attack == 'h'): #heal
             pass
+        else: #not valid move
+            print("Not a valid move. Try again.")
+            continue # back to start of loop
