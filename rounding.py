@@ -11,6 +11,4 @@
 total = (10.2823 +7.6991)/2.66
 '''Division & addition with some floats'''
 
-print(f"This is the total {total}",total) #Two ways to print out num alongside strings
-
-#
+print(f"This is the total {total}.","Rounded total:",round(total,2)) #Two ways to print out num alongside strings
